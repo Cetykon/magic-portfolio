@@ -177,6 +177,20 @@ export interface About extends BasePageConfig {
       description: React.ReactNode;
     }>;
   };
+  /** Activities & Leadership section */
+  activities?: {
+    /** Whether to display activities section */
+    display: boolean;
+    /** Title for the activities section */
+    title: string;
+    /** List of activities */
+    items: Array<{
+      /** Activity name */
+      name: string;
+      /** Activity description */
+      description: React.ReactNode;
+    }>;
+  };
   /** Technical skills section */
   technical: {
     /** Whether to display technical skills section */

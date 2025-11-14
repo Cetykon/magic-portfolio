@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Jesus",
+  lastName: "Aguilar-Andrade",
+  name: `Jesus Aguilar-Andrade`,
+  role: "Software Engineer Student",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "aguilarandradejesus@gmail.com",
+  location: "America/Detroit", // Grand Rapids, Michigan timezone
+  languages: ["English", "Spanish"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false, // Set to false to hide newsletter section
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>My weekly newsletter about software engineering and development</>,
 };
 
 const social: Social = [
@@ -24,17 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/Cetykon",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/jesusaguilardev",
   },
   {
     name: "Email",
@@ -49,30 +44,25 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building software solutions with passion and precision</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">TDMP Media</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/tdmp-media-scheduling-system",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Jesus, a software engineering student at Ferris State University, 
+      where I build full-stack applications and explore emerging technologies.
+      <br /> Passionate about creating efficient, scalable solutions.
     </>
   ),
 };
@@ -90,7 +80,7 @@ const about: About = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false, // Set to false to hide calendar section, or update link with your calendar
     link: "https://cal.com",
   },
   intro: {
@@ -98,9 +88,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Jesus is a software engineering student at Ferris State University, graduating in September 2025 with a B.S. in Digital Media Software Engineering. 
+        He specializes in Intelligent Systems and Full-Stack Development, with experience as a Machine Learning Intern at Telic Corporation and Software Developer Intern 
+        at Ferris State University. His work spans machine learning classification systems, full-stack web development, computer vision, and real-time systems. 
+        With a strong foundation in multiple programming languages and frameworks, he enjoys tackling complex problems and creating efficient, scalable solutions.
       </>
     ),
   },
@@ -109,41 +100,35 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Telic Corporation",
+        timeframe: "August 2025 – September 2025",
+        role: "Machine Learning Intern - Disposition Project",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed an ML classification model system for military warehouse waste management, classifying over 100,000 asset disposition images across 2,449 categories with 97.69% classification accuracy using MobileNetV2.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Implemented the ML Model with a mobile app for real-time, on-site classification and a desktop GUI for high-volume batch processing, to significantly streamline resource recovery operations.
+          </>,
+          <>
+            Tech Stack: Python, TensorFlow/Keras, PyTorch, Android (Kotlin), PyQt6, OpenCV, YOLO, MobileNetV2
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Ferris State University - TDMP Media Scheduler",
+        timeframe: "February 2025 – August 2025",
+        role: "Software Developer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Engineered a media scheduling and inventory platform using Spring Boot and React, supporting 300+ students and automating 100% of equipment reservations, checkouts, and returns.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Configured and deployed MariaDB database on Sevella, backend services via Render, and frontend React app via Netlify, enabling reliable, full-stack access for students and faculty.
+          </>,
+          <>
+            Tech Stack: Java Spring (Maven), MariaDB, React.js, JWT Authentication, Google Email API, Docker
           </>,
         ],
         images: [],
@@ -152,78 +137,158 @@ const about: About = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ferris State University",
+        description: (
+          <>
+            <strong>B.S. in Digital Media Software Engineering</strong>
+            <br />
+            Completion: September 2025
+            <br />
+            Concentrations: Intelligent Systems and Full-Stack Development
+            <br />
+            GPA: 4.00/4.00
+            <br />
+            Related Coursework: Machine Learning, Data Structures & Algorithms, Software QA, Graphical Interface Design, Enterprise Software Application, Component Design, Project Management, Software Architecture
+          </>
+        ),
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Grand Rapids Community College",
+        description: (
+          <>
+            <strong>A.S. in Arts and Science</strong>
+            <br />
+            Completion: July 2023
+            <br />
+            GPA: 3.68/4.00
+            <br />
+            Related Coursework: Linux, Discrete Math, Linear Algebra, Statistics, Calculus I, Calculus II, Calculus-Based Physics
+          </>
+        ),
+      },
+    ],
+  },
+  activities: {
+    display: true, // set to false to hide this section
+    title: "Activities & Leadership",
+    items: [
+      {
+        name: "Catholic Youth Group – Generatión Del Manifesto Católico",
+        description: (
+          <>
+            <strong>Secretary & Founding Member</strong>
+            <br />
+            August 2024 – Current | Grand Rapids, Michigan
+            <br />
+            Managing bookkeeping and events for 19+ members. Responsible for organizing events, teaching faith-based lessons, and working to expand the group to other churches in the area.
+          </>
+        ),
+      },
+      {
+        name: "IEEEXtreme Competition 2024",
+        description: (
+          <>
+            <strong>Participant</strong>
+            <br />
+            October 2024 | Remote
+            <br />
+            In a three-person competition, only two of us participated, yet we managed to place 65th out of 149 teams in the United States.
+          </>
+        ),
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Languages",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Proficient in Java, Python, JavaScript, C#, VB.NET, SQL, and HTML/CSS. 
+            Experience building full-stack applications, RESTful APIs, machine learning systems, and mobile applications.
+          </>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Java",
+            icon: "javascript",
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Python",
+            icon: "javascript",
           },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
           {
             name: "JavaScript",
             icon: "javascript",
           },
           {
-            name: "Next.js",
-            icon: "nextjs",
+            name: "C#",
+            icon: "javascript",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "SQL",
+            icon: "javascript",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Frameworks & Tools",
+        description: (
+          <>
+            Building modern applications with React.js, Spring Boot, Flask, TensorFlow, OpenCV, Docker, Git, and various development environments. 
+            Experience with Eclipse, Visual Studio, Jupyter Notebooks, Bootstrap, and Agile methodologies.
+          </>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "React.js",
+            icon: "javascript",
+          },
+          {
+            name: "Spring Boot",
+            icon: "javascript",
+          },
+          {
+            name: "TensorFlow",
+            icon: "javascript",
+          },
+          {
+            name: "Docker",
+            icon: "javascript",
           },
         ],
-      },  
+        images: [],
+      },
+      {
+        title: "Core Areas",
+        description: (
+          <>
+            Specialized expertise in Full-Stack Development, Machine Learning, Computer Vision, API Design, and Data Processing. 
+            Experience with ML classification models, real-time systems, and scalable application architecture.
+          </>
+        ),
+        tags: [
+          {
+            name: "ML",
+            icon: "javascript",
+          },
+          {
+            name: "Computer Vision",
+            icon: "javascript",
+          },
+          {
+            name: "Full-Stack",
+            icon: "javascript",
+          },
+        ],
+        images: [],
+      },
     ],
   },
 };
@@ -231,7 +296,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about software engineering and development...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -249,49 +314,92 @@ const work: Work = {
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Gallery – ${person.name}`,
+  description: `A collection of projects and work by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
+      src: "/images/gallery/1734565196117-f3cc94e3-28ba-49f1-8de2-04411e44c56d_.jpg",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/gallery/20230428_171938.jpg",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG_3463.JPG",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/IMG_3761~2.JPG",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/IMG_3887.JPG",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/IMG-20231222-WA0004.jpg",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG-20250526-WA0002.jpg",
+      alt: "Gallery image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG-20250628-WA0190.jpg",
+      alt: "Gallery image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/IMG-20250823-WA0000.jpg",
+      alt: "Gallery image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/IMG-20251004-WA0055.jpg",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      src: "/images/gallery/IMG-20251017-WA0125.jpg",
+      alt: "Gallery image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
+      src: "/images/gallery/PXL_20220925_175153131.jpg",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/PXL_20231227_154317328.jpg",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/PXL_20241227_021736257.jpg",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/PXL_20250728_030035475.jpg",
+      alt: "Gallery image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/PXL_20250828_175810240.jpg",
+      alt: "Gallery image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/Snapchat-1249775168.jpg",
+      alt: "Gallery image",
       orientation: "vertical",
     },
   ],

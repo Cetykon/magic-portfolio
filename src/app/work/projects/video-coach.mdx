@@ -1,0 +1,37 @@
+---
+title: "Video Coach App"
+publishedAt: "2025-01-01"
+summary: "A real-time computer vision ML pipeline for tracking workouts in automotive fitness. The system classifies exercise types and converts real-time body pose data into joint angles to provide corrective feedback."
+images:
+  - "/images/projects/project-01/cover-02.jpg"
+---
+
+## Overview
+
+Built a real-time computer vision pipeline using OpenCV and ML classification to analyze workout form and detect exercise start/end conditions with improved tracking accuracy. Designed custom feedback algorithms converting body pose data into joint-angle metrics, enhancing repetition tracking and time-based analytics for user performance insights.
+
+## Key Features
+
+- **Real-time Posture Detection**: Computer vision-based analysis of exercise form
+- **Sequential Classification**: Position detection (front/left/right) followed by exercise recognition
+- **Repetition Counting**: Automated tracking of exercise repetitions
+- **Form Correction**: Real-time feedback on exercise posture
+- **Modular Architecture**: Singleton-driven UI and factory patterns for flexible customization
+- **Cooldown Timer**: Conditional triggers for workout timing management
+
+## Technologies Used
+
+- **Python**: Core development language
+- **OpenCV**: Computer vision and image processing
+- **Design Patterns**: Modular architecture for flexible customization
+- **ML Classification**: Machine learning for exercise type classification
+- **Computer Vision**: Real-time body pose detection and joint angle calculation
+
+## Challenges and Learnings
+
+The most significant challenge was implementing accurate posture detection in real-time while maintaining performance. The sequential classification approach required careful pipeline design to ensure accurate position and exercise detection. Implementing the factory pattern for dynamic exercise tracking logic allowed for flexible workout customization while maintaining code maintainability.
+
+## Outcome
+
+The system successfully provides real-time exercise coaching with accurate posture detection and form correction. The modular architecture allows for easy extension to new exercises and workout types, making it a flexible solution for fitness applications.
+

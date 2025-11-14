@@ -14,7 +14,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://jesusaguilarandrade.com"; // Update with your actual domain
 
 const routes: RoutesConfig = {
   "/": true,
@@ -187,17 +187,17 @@ const mailchimp: MailchimpConfig = {
 // default schema data
 const schema: SchemaConfig = {
   logo: "",
-  type: "Organization",
-  name: "Once UI",
+  type: "Person",
+  name: "Jesus Aguilar-Andrade",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "aguilarandradejesus@gmail.com",
 };
 
 // social links
 const sameAs: SameAsConfig = {
-  threads: "https://www.threads.com/@once_ui",
-  linkedin: "https://www.linkedin.com/company/once-ui/",
-  discord: "https://discord.com/invite/5EyAQ4eNdS",
+  threads: "", // Add your Threads link if you have one
+  linkedin: "https://www.linkedin.com/in/jesusaguilardev",
+  discord: "", // Add your Discord link if you have one
 };
 
 // social sharing configuration for blog posts

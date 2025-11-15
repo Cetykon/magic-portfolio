@@ -47,12 +47,9 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
       setIsRouteEnabled(routeEnabled);
 
       if (protectedRoutes[pathname as keyof typeof protectedRoutes]) {
-        setIsPasswordRequired(true);
-
-        const response = await fetch("/api/check-auth");
-        if (response.ok) {
-          setIsAuthenticated(true);
-        }
+        // Password protection disabled for static export
+        // setIsPasswordRequired(true);
+        setIsAuthenticated(true); // Allow access in static export
       }
 
       setLoading(false);
@@ -62,18 +59,9 @@ const RouteGuard: React.FC<RouteGuardProps> = ({ children }) => {
   }, [pathname]);
 
   const handlePasswordSubmit = async () => {
-    const response = await fetch("/api/authenticate", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password }),
-    });
-
-    if (response.ok) {
-      setIsAuthenticated(true);
-      setError(undefined);
-    } else {
-      setError("Incorrect password");
-    }
+    // Password protection disabled for static export
+    setIsAuthenticated(true);
+    setError(undefined);
   };
 
   if (loading) {

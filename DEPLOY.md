@@ -23,17 +23,37 @@ This portfolio is configured to deploy on Netlify with Next.js 15.
    - Click "Deploy site"
    - Netlify will automatically use the `netlify.toml` configuration
 
-## Manual Deploy
+## Drag and Drop Deploy (Easiest Method)
 
-If you prefer to deploy manually:
+1. **Build the project:**
+   ```bash
+   npm run build
+   ```
+
+2. **Drag and drop the `out` folder:**
+   - Go to [Netlify](https://www.netlify.com/)
+   - Log in to your account
+   - On the dashboard, find the "Sites" section
+   - Drag and drop the entire `out` folder from your project directory onto the Netlify dashboard
+   - Netlify will automatically deploy your site
+
+3. **Your site will be live** at a URL like `https://random-name-123.netlify.app`
+
+## Git-Based Deploy (Automatic)
+
+If you prefer automatic deployments from Git:
 
 ```bash
 # Build the project
 npm run build
 
-# The netlify.toml file is already configured
-# Just connect your site to Netlify and it will use these settings
+# Commit and push your code
+git add .
+git commit -m "Ready for deployment"
+git push
 ```
+
+Then connect your repository to Netlify (see "Quick Deploy" above).
 
 ## Configuration Files
 
@@ -49,7 +69,8 @@ After deployment, you can add a custom domain in Netlify:
 
 ## Notes
 
-- The portfolio uses Next.js API routes (for OG image generation, etc.)
-- Netlify's Next.js plugin automatically handles serverless functions
-- Make sure to update `baseURL` in `src/resources/once-ui.config.ts` with your Netlify domain
+- This portfolio is configured for **static export** (no server-side functionality)
+- All pages are pre-rendered as static HTML files
+- Make sure to update `baseURL` in `src/resources/once-ui.config.ts` with your Netlify domain after deployment
+- The `out` folder contains all static files ready for deployment
 

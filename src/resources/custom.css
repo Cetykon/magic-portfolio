@@ -1,3 +1,19 @@
+/* Prevent image rotation from EXIF orientation data in gallery */
+/* This ensures images display as they are stored, without EXIF-based rotation */
+img[src*="/images/gallery/"] {
+  image-orientation: none;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
+/* Also target any nested img tags in gallery Media components */
+[data-media] img,
+[data-gallery] img {
+  image-orientation: none;
+  -webkit-transform: none !important;
+  transform: none !important;
+}
+
 /* :root {
   /*
   /* Example setup for custom colors */

@@ -14,7 +14,7 @@ import {
   SpacingToken,
 } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
-import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
+import { baseURL, effects, fonts, style, dataStyle, home, person } from "@/resources";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -45,6 +45,9 @@ export default async function RootLayout({
       )}
     >
       <head>
+        {/* Preload critical images */}
+        <link rel="preload" as="image" href={person.avatar} />
+        {home.image && <link rel="preload" as="image" href={home.image} />}
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{

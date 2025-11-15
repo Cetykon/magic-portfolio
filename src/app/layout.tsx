@@ -45,6 +45,10 @@ export default async function RootLayout({
       )}
     >
       <head>
+        {/* Favicon */}
+        <link rel="icon" href={person.avatar} />
+        <link rel="shortcut icon" href={person.avatar} />
+        <link rel="apple-touch-icon" href={person.avatar} />
         {/* Preload critical images */}
         <link rel="preload" as="image" href={person.avatar} />
         {home.image && <link rel="preload" as="image" href={home.image} />}

@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Jesus",
   lastName: "Aguilar-Andrade",
   name: `Jesus Aguilar-Andrade`,
-  role: "Software Engineer Student",
+  role: "Software Engineer",
   avatar: "/images/avatar.jpg",
   email: "aguilarandradejesus@gmail.com",
   location: "America/Detroit", // Grand Rapids, Michigan timezone
@@ -60,7 +60,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Jesus, a software engineering student at Ferris State University, 
+      I'm Jesus, a software engineer with a B.S. in Digital Media Software Engineering from Ferris State University, 
       where I build full-stack applications and explore emerging technologies.
       <br /> Passionate about creating efficient, scalable solutions.
     </>
@@ -88,7 +88,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Jesus is a software engineering student at Ferris State University, graduating in September 2025 with a B.S. in Digital Media Software Engineering. 
+        Jesus is a software engineer with a B.S. in Digital Media Software Engineering from Ferris State University, completed in September 2025. 
         He specializes in Intelligent Systems and Full-Stack Development, with experience as a Machine Learning Intern at Telic Corporation and Software Developer Intern 
         at Ferris State University. His work spans machine learning classification systems, full-stack web development, computer vision, and real-time systems. 
         With a strong foundation in multiple programming languages and frameworks, he enjoys tackling complex problems and creating efficient, scalable solutions.

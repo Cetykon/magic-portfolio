@@ -318,21 +318,6 @@ const gallery: Gallery = {
   description: `A collection of projects and work by ${person.name}`,
   images: [
     {
-      src: "/images/gallery/1734565196117-f3cc94e3-28ba-49f1-8de2-04411e44c56d_.jpg",
-      alt: "Gallery image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/20230428_171938.jpg",
-      alt: "Gallery image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/IMG_3463.JPG",
-      alt: "Gallery image",
-      orientation: "horizontal",
-    },
-    {
       src: "/images/gallery/IMG_3761~2.JPG",
       alt: "Gallery image",
       orientation: "horizontal",
@@ -341,11 +326,6 @@ const gallery: Gallery = {
       src: "/images/gallery/IMG_3887.JPG",
       alt: "Gallery image",
       orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/IMG-20231222-WA0004.jpg",
-      alt: "Gallery image",
-      orientation: "vertical",
     },
     {
       src: "/images/gallery/IMG-20250526-WA0002.jpg",
@@ -364,11 +344,6 @@ const gallery: Gallery = {
     },
     {
       src: "/images/gallery/IMG-20251004-WA0055.jpg",
-      alt: "Gallery image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/IMG-20251017-WA0125.jpg",
       alt: "Gallery image",
       orientation: "horizontal",
     },
